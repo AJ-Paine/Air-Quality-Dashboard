@@ -110,14 +110,14 @@ d3.csv(csv, function(response){
   };
   
   //Create bounds for map
-  bounds = new L.LatLngBounds(new L.LatLng(42, -109.8), new L.LatLng(36.8, -101))
+  //bounds = new L.LatLngBounds(new L.LatLng(42, -109.8), new L.LatLng(36.8, -101))
 
   //Create inital map object with default layers
   var myMap = L.map("map", {
     center: [39.0, -105.3],
     //center: bounds.getCenter(),
     zoom: 7,
-    maxBounds: bounds,
+    //maxBounds: bounds,
     layers: [outdoormap, cityLayer]
   });
 
